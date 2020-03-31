@@ -1,0 +1,44 @@
+
+<app-header title="Segment"></app-header>
+
+<ion-content>
+
+  <ion-segment #superheroesSegment color="codere"
+    (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="">
+      <ion-label>Todos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="marvel">
+      <ion-label>Marvel</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="dc">
+      <ion-label>D&C</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+ <ion-list class="animated fadeIn fast">
+ <ion-item *ngFor="let hero of (superheros | async) | searchFilter:publisher :'publisher'">
+   <ion-label>{{hero.superhero}} <small> ({{hero.alter_ego}}) </small>
+    <p>First appearance: {{hero.first_appearance}}</p>
+  </ion-label>
+  <ion-label slot="end" text-right>
+    {{hero.publisher}}
+  </ion-label>
+ </ion-item>
+</ion-list> 
+
+  <ion-list class="animated flash infinite slow" *ngIf="(superheros | async) === null">
+    <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1,1]">
+      <ion-label>
+        <ion-skeleton-text width="70%"></ion-skeleton-text>
+        <ion-skeleton-text width="100%"></ion-skeleton-text>
+      </ion-label>
+      <ion-label slot="end" text-right>
+        <ion-skeleton-text width="40px"t></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<!-- 48798 -->

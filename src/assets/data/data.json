@@ -1,0 +1,113 @@
+[
+    {
+        "icon": "american-football",
+        "name": "Action-sheet",
+        "redirectTo": "/action-sheet"
+    },
+    {
+        "icon": "appstore",
+        "name": "Alert",
+        "redirectTo": "/alert"
+    },
+    {
+        "icon": "logo-octocat",
+        "name": "Avatar",
+        "redirectTo": "/avatar"
+    },
+    {
+        "icon": "radio-button-on",
+        "name": "Buttons",
+        "redirectTo": "/buttons"
+    },
+    {
+        "icon": "card",
+        "name": "Cards",
+        "redirectTo": "/card"
+    },
+    {
+        "icon": "done-all",
+        "name": "Check",
+        "redirectTo": "/check"
+    },
+    {
+        "icon": "calendar",
+        "name": "Dates",
+        "redirectTo": "/datetime"
+    },
+    {
+        "icon": "eye",
+        "name": "Fabs",
+        "redirectTo": "/fab"
+    },
+    {
+        "icon": "apps",
+        "name": "Grid",
+        "redirectTo": "/grid"
+    },
+    {
+        "icon": "infinite",
+        "name": "Infinite-scroll",
+        "redirectTo": "/infinite-scroll"
+    },
+    {
+        "icon": "hammer",
+        "name": "Input-forms",
+        "redirectTo": "/input"
+    },
+    {
+        "icon": "list",
+        "name": "Listas",
+        "redirectTo": "/list"
+    },
+    {
+        "icon": "sync",
+        "name": "Listas-reorder",
+        "redirectTo": "/list-reorder"
+    },
+    {
+        "icon": "refresh-circle",
+        "name": "Loading",
+        "redirectTo": "/loading"
+    },
+    {
+        "icon": "phone-portrait",
+        "name": "Modal",
+        "redirectTo": "/modal"
+    },
+    {
+        "icon": "browsers",
+        "name": "Popover",
+        "redirectTo": "/popover"
+    },
+    {
+        "icon": "barcode",
+        "name": "Progress-bar",
+        "redirectTo": "/progress-bar"
+    },
+    {
+        "icon": "arrow-round-down",
+        "name": "Refresher",
+        "redirectTo": "/refresher"
+    },
+    {
+        "icon": "search",
+        "name": "Search-bar",
+        "redirectTo": "/searchbar"
+    },
+    {
+        "icon": "copy",
+        "name": "Segment",
+        "redirectTo": "/segment"
+    },
+    {
+        "icon": "albums",
+        "name": "Slides",
+        "redirectTo": "/slides"
+    },
+    {
+        "icon": "bookmark",
+        "name": "Tabs",
+        "redirectTo": "/tabs/account"
+    }
+
+]

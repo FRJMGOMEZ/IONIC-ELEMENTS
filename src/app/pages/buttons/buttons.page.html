@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>buttons</ion-title>
+    <ion-buttons slot="end">
+     <ion-button color="primary">
+       <ion-icon name="heart"></ion-icon>
+     </ion-button>
+     <ion-button color="primary">
+       <ion-icon name="star"></ion-icon>
+     </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button expand="full" size="small">Little</ion-button>
+  <ion-button expand="full" size="default">Medium</ion-button>
+  <ion-button expand="full" size="large">Large</ion-button>
+
+  <ion-row class="top-20">
+    <ion-col>
+       <ion-button  expand="full" color="tertiary" [routerLink]="['/avatar']">TO AVATAR</ion-button>
+    </ion-col>
+    <ion-col>
+       <ion-button  expand="full" color="secondary" [routerLink]="['/action-sheet']"> TO ACTION-SHEET</ion-button>
+    </ion-col>
+    <ion-col>
+       <ion-button  expand="full" color="danger" [routerLink]="['/alert']">TO ALERT</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <!-- FILL -->
+    <ion-button class="top-20" fill="clear">
+      Clear
+    </ion-button>
+    <ion-button class="top-20" fill="outline">
+      Outline
+    </ion-button>
+    <ion-button class="top-20" fill="solid">
+      Solid/default
+    </ion-button>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,39 @@
+<app-header title="Grid-row"></app-header>
+
+<ion-content padding fullscreen>
+
+  <ion-grid fixed>
+    <!-- <ion-row>
+      <ion-col *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1] let i = index">
+        Hola, {{i+1}}
+      </ion-col>
+      <ion-col>
+       Hi        
+      </ion-col>
+      <ion-col>
+        Arigato
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col  size-lg="3" size-md="4" size-sm="6" size-xs="12"
+      *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1] let i = index">
+        <ion-card>
+          <img src="../../../assets//images/stan-lee.jpg">
+          </img>
+          <ion-card-header>
+            <ion-card-subtitle>
+              Card subtitle
+            </ion-card-subtitle>
+            <ion-card-title>
+              Card title
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id non eligendi voluptas possimus dignissimos at nulla tempore veniam facere laboriosam dolorem omnis voluptates laudantium nihil, alias, animi fugiat unde quis?
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

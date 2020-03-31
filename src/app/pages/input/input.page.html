@@ -1,0 +1,35 @@
+<app-header title="Inputs"></app-header>
+
+<ion-content>
+
+  <form #form="ngForm" action="" (ngSubmit)="onSubmitTemplate()">
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          Formulario template válido : {{form.valid}}
+        </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          type="email"
+          [(ngModel)]="user.email"
+          name="email"
+          required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          type="password"
+          [(ngModel)]="user.password"
+          name="password"
+          required>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="full" color="primary" type="submit" [disabled]="!form.valid">
+           SAVE
+    </ion-button>
+  </form>
+</ion-content>

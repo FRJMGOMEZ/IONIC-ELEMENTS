@@ -1,0 +1,14 @@
+
+
+ <ion-header  no-border translucent="true">
+  <ion-toolbar>
+    <ion-title tex-capitalize >{{info.name}} --- {{info.location}}</ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content padding>
+
+ <ion-button color="primary" expand="full" (click)="outWithoutArg()">Salir sin argumentos</ion-button>
+ <ion-button color="secondary" expand="full" (click)="outWithArg()">Salir con argumentos</ion-button>
+
+</ion-content>
